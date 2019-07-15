@@ -160,17 +160,21 @@ function concertThis() {
 }
 
 function doWhatItSays() {
-	fs.readFile("random.txt", "utf8", (err, data)); {
+	fs.readFile("random.txt", "utf8", function(err, data) {
         if (err) {
-			return console.log("Unable to comply." + error);
+			return console.log("error." + error);
 		}else{
+
 		var dataArr = data.split(",");
 		action = dataArr[0];
         songTitle = dataArr[1];
-        var userSong = action + "" + songTitle;
+        moviename = songTitle;
+
+        // console.log(songTitle);
 		spotifyThisSong();
         }
-    }
+    });
 }
+
 
 

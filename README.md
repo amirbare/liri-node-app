@@ -4,7 +4,7 @@ Node APP with spotify, bands in town, and OMDB
 
 This application takes 2 inputs to give you concert information, song information, movies information and a bonus function that runs a function from the random.txt file
 
-In order to run the application you must install axios, moment, spotify, fs, you will also need your own spotify API key.
+In order to run the application you must install axios, moment, spotify, fs, Dotnev you will also need your own spotify API key.
 
 1. The first step is type node liri.js movie-this "name of movie in quotes"
 
@@ -16,6 +16,8 @@ In order to run the application you must install axios, moment, spotify, fs, you
     * Language of the movie.
     * Plot of the movie.
     * Actors in the movie.
+
+    This step also add the information from the movie into the log.txt file
 
 2. The second step is type node liri.js concert-this "name of band in quotes"
 
